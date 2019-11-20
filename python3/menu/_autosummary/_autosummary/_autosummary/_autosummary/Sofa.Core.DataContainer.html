@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sofa.Core.DataContainer &mdash; SofaPython3 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Sofa.Core.DataString" href="Sofa.Core.DataString.html" />
+    <link rel="prev" title="Sofa.Core.DataDictIterator" href="Sofa.Core.DataDictIterator.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> SofaPython3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../Welcome.html">Welcome to SofaPython3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../install.html">Download and Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../SofaPlugin.html">Using the plugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../SofaModule.html">The modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../Sofa.html">Package containg the binding for the core of Sofa</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../Sofa.Core.html">Scene components</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#core-components">Core components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#overridable-components">Overridable components</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../../Sofa.Core.html#utilitary-classes">Utilitary classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Simulation.html">Controlling a simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Types.html">Default data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Helper.html">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaRuntime.html">Expose aspect specific to the application/runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaExporter.html">Binding for the SofaExporter plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaTypes.html">SofaType package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../CustomModule.html">Writing custom binding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">SofaPython3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../SofaModule.html">The modules</a> &raquo;</li>
+        
+          <li><a href="../../../Sofa.html">Package containg the binding for the core of Sofa</a> &raquo;</li>
+        
+          <li><a href="../../Sofa.Core.html">Scene components</a> &raquo;</li>
+        
+      <li>Sofa.Core.DataContainer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/menu/_autosummary/_autosummary/_autosummary/_autosummary/Sofa.Core.DataContainer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sofa-core-datacontainer">
+<h1>Sofa.Core.DataContainer<a class="headerlink" href="#sofa-core-datacontainer" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Sofa.Core.DataContainer">
+<em class="property">class </em><code class="sig-prename descclassname">Sofa.Core.</code><code class="sig-name descname">DataContainer</code><a class="headerlink" href="#Sofa.Core.DataContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Classic python container implemented for SOFA data fields.</p>
+<dl class="method">
+<dt id="Sofa.Core.DataContainer.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Sofa.Core.DataContainer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Sofa.Core.DataContainer.__init__" title="Sofa.Core.DataContainer.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply</span></code>(self, arg0)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAsACreateObjectParameter</span></code>(self)</p></td>
+<td><p>Return the full path name of this baseObject with an extra prefix ‘&#64;’ :rtype: string</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCounter</span></code>(self)</p></td>
+<td><p>Return the number of changes since creation.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getHelp</span></code>(self)</p></td>
+<td><p>Get the help message.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLinkPath</span></code>(self)</p></td>
+<td><p>Return the path of the link to the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getName</span></code>(self)</p></td>
+<td><p>Get the name of the data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getOwner</span></code>(self)</p></td>
+<td><p>Return the Base component owning this data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getParent</span></code>(self)</p></td>
+<td><p>Return the parent data of this data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathName</span></code>(self)</p></td>
+<td><p>Return the name of the path of the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getValueString</span></code>(self)</p></td>
+<td><p>Print the value of the associated variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getValueTypeString</span></code>(self)</p></td>
+<td><p>Print the value of the associated variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getValueVoidPtr</span></code>(self)</p></td>
+<td><p>Get a constant void pointer to the value held in this data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hasChanged</span></code>(self)</p></td>
+<td><p>Update the data if it is dirty.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">hasParent</span></code>(self)</p></td>
+<td><p>Check whether the data has a parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isDirty</span></code>(self)</p></td>
+<td><p>Return true if the DDGNode needs to be updated.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isPersistent</span></code>(self)</p></td>
+<td><p>Alias to match BaseData API.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code>(self)</p></td>
+<td><p>Return whether this data will be read-only in GUIs.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isRequired</span></code>(self)</p></td>
+<td><p>Check whether a data is flagged as required for the creation of an object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSet</span></code>(self)</p></td>
+<td><p>Check if the value has been modified If this data is linked, the value of this data will be considered as modified (even if the parent’s value has not been modified) :return: True if the data has been modified</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">read</span></code>(self, arg0)</p></td>
+<td><p>Read the command line, set the value of the data to the given content of the command line.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setName</span></code>(self, arg0)</p></td>
+<td><p>Set a new name for the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setParent</span></code>(self, arg0)</p></td>
+<td><p>Set a new parent and a new path for the data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPersistent</span></code>(self, arg0)</p></td>
+<td><p>Alias to match BaseData API.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setReadOnly</span></code>(self, arg0)</p></td>
+<td><p>Set whether this data is read-only.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">toList</span></code>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">typeName</span></code>(self)</p></td>
+<td><p>Return the name of the type of the data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">unset</span></code>(self, arg0)</p></td>
+<td><p>Reset the isSet flag to false, to indicate that the current value is the default for this data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateIfDirty</span></code>(self)</p></td>
+<td><p>Utility method to call update if necessary.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeable</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeableArray</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndim</span></code></p></td>
+<td><p>Return the number of dimensions in the container</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code></p></td>
+<td><p>Return the shape of the container (a tuple of length ndim, with each value being equal to the length of the given dimension)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">size</span></code></p></td>
+<td><p>Return the total number of elements in the container ( equivalent to math.prod(self.shape()) )</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Sofa.Core.DataString.html" class="btn btn-neutral float-right" title="Sofa.Core.DataString" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Sofa.Core.DataDictIterator.html" class="btn btn-neutral float-left" title="Sofa.Core.DataDictIterator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, damien.marchal@univ-lille.fr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

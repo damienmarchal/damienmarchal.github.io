@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sofa.Core.Controller &mdash; SofaPython3 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Sofa.Core.ForceField" href="Sofa.Core.ForceField.html" />
+    <link rel="prev" title="Sofa.Core.Camera" href="Sofa.Core.Camera.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> SofaPython3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../Welcome.html">Welcome to SofaPython3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../install.html">Download and Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../SofaPlugin.html">Using the plugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../SofaModule.html">The modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../Sofa.html">Package containg the binding for the core of Sofa</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../Sofa.Core.html">Scene components</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#core-components">Core components</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../../Sofa.Core.html#overridable-components">Overridable components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#utilitary-classes">Utilitary classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Simulation.html">Controlling a simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Types.html">Default data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Helper.html">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaRuntime.html">Expose aspect specific to the application/runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaExporter.html">Binding for the SofaExporter plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaTypes.html">SofaType package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../CustomModule.html">Writing custom binding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">SofaPython3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../SofaModule.html">The modules</a> &raquo;</li>
+        
+          <li><a href="../../../Sofa.html">Package containg the binding for the core of Sofa</a> &raquo;</li>
+        
+          <li><a href="../../Sofa.Core.html">Scene components</a> &raquo;</li>
+        
+      <li>Sofa.Core.Controller</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/menu/_autosummary/_autosummary/_autosummary/_autosummary/Sofa.Core.Controller.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sofa-core-controller">
+<h1>Sofa.Core.Controller<a class="headerlink" href="#sofa-core-controller" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Sofa.Core.Controller">
+<em class="property">class </em><code class="sig-prename descclassname">Sofa.Core.</code><code class="sig-name descname">Controller</code><a class="headerlink" href="#Sofa.Core.Controller" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Interface for user interaction on SOFA Components.</p>
+<p>It can catch events to trigger actions, such as onAnimateBeginEvent, onAnimateEndEvent or onPythonScriptEvent.
+A new custom controller class needs to be defined to use a controller in a script,
+and that class needs to reimplement the __init__ method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Example of use</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>In the following example, we redefine the controller class, and reimplement the __init__ method.
+We also implement the onAnimateBeginEvent, that will be activted everytime an animation step ends
+and that will simply print a message in the command line. In the createScene function, we initialize
+the controller and add it to the rootNode.
+If you run this with runSofa, it will simply endlessly print <cite>onAnimateBeginEvent</cite>
+when you click the Animate button.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Sofa.Core</span>
+
+<span class="k">class</span> <span class="nc">MyController</span><span class="p">(</span><span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+         <span class="c1">## These are needed (and the normal way to override from a python class)</span>
+         <span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Controller</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot; Python::__init__::&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">onAnimateBeginEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;onAnimateBeginEvent&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">createScene</span><span class="p">(</span><span class="n">rootNode</span><span class="p">):</span>
+    <span class="n">controller</span> <span class="o">=</span> <span class="n">MyController</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;MyC&quot;</span><span class="p">)</span>
+    <span class="n">rootNode</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="n">controller</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">rootNode</span>
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="method">
+<dt id="Sofa.Core.Controller.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self: Sofa.Core.Controller</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#Sofa.Core.Controller.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Sofa.Core.Controller.__init__" title="Sofa.Core.Controller.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, *args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addData</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addSlave</span></code>(self, arg0)</p></td>
+<td><p>Add a slave to the master BaseObject.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bwdInit</span></code>(self)</p></td>
+<td><p>Initialization method called at graph creation and modification, during bottom-up traversal.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cleanup</span></code>(self)</p></td>
+<td><p>Called just before deleting this object Any object in the tree bellow this object that are to be removed will be removed only after this call, so any references this object holds should still be valid.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">computeBBox</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">findData</span></code>(self, arg0)</p></td>
+<td><p>Find a data field given its name.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">findLink</span></code>(self, arg0)</p></td>
+<td><p>Find a link given its name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAsACreateObjectParameter</span></code>(self)</p></td>
+<td><p>Return the full path name of this baseObject with an extra prefix ‘&#64;’ :rtype: string</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCategories</span></code>(self)</p></td>
+<td><p>Return the list of categories the current object belongs to.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClass</span></code>(self)</p></td>
+<td><p>Return the class of the object</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClassName</span></code>(self)</p></td>
+<td><p>Get the name of the class of the Base.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getContext</span></code>(self)</p></td>
+<td><p>Return the conext of the baseObject.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getData</span></code>(self, arg0)</p></td>
+<td><p>Get the data field given its name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDataFields</span></code>(self)</p></td>
+<td><p>Accessor to the vector containing all the fields of this object :return: A vector containing the data fields</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDefinitionSourceFileName</span></code>(self)</p></td>
+<td><p>Returns the name of the file that contains the object definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDefinitionSourceFilePos</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is defined.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getInstanciationFileName</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is instanciatiated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getInstanciationSourceFilePos</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is instanciatiated.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLinkPath</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLinks</span></code>(self)</p></td>
+<td><p>Accessor to the vector containing all the links of this object :return: A vector containing the links</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMaster</span></code>(self)</p></td>
+<td><p>Return the master of the baseObject.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getName</span></code>(self)</p></td>
+<td><p>Return the name of the entity :rtype: string</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathName</span></code>(self)</p></td>
+<td><p>Return the full path name of this baseObject :rtype: string</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSlaves</span></code>(self)</p></td>
+<td><p>Return the slaves of the baseObject.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getTarget</span></code>(self)</p></td>
+<td><p>Return the target (plugin) that contains the current baseObject.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getTemplateName</span></code>(self)</p></td>
+<td><p>Get the name of the template of the Base.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">init</span></code>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reinit</span></code>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(self)</p></td>
+<td><p>Reset to initial state.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setName</span></code>(self, arg0)</p></td>
+<td><p>Set the name of this object :param n :type n: string</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSrc</span></code>(self, arg0, arg1)</p></td>
+<td><p>Set a source Object and parses it to collect dependent Data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">storeResetState</span></code>(self)</p></td>
+<td><p>Save the initial state for later uses in reset()</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Sofa.Core.ForceField.html" class="btn btn-neutral float-right" title="Sofa.Core.ForceField" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Sofa.Core.Camera.html" class="btn btn-neutral float-left" title="Sofa.Core.Camera" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, damien.marchal@univ-lille.fr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

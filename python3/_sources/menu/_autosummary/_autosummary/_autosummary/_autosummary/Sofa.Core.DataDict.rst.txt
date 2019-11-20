@@ -1,0 +1,25 @@
+Sofa.Core.DataDict
+==================
+
+.. currentmodule:: Sofa.Core
+
+.. autoclass:: DataDict
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~DataDict.__init__
+      ~DataDict.items
+      ~DataDict.keys
+      ~DataDict.values
+   
+   
+
+   
+   
+   

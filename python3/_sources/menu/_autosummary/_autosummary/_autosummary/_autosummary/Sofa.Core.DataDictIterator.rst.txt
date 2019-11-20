@@ -1,0 +1,22 @@
+Sofa.Core.DataDictIterator
+==========================
+
+.. currentmodule:: Sofa.Core
+
+.. autoclass:: DataDictIterator
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~DataDictIterator.__init__
+   
+   
+
+   
+   
+   

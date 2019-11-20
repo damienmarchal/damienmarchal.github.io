@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Scene components &mdash; SofaPython3 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Sofa.Core.Data" href="_autosummary/_autosummary/Sofa.Core.Data.html" />
+    <link rel="prev" title="Package containg the binding for the core of Sofa" href="../Sofa.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> SofaPython3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Welcome.html">Welcome to SofaPython3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Download and Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SofaPlugin.html">Using the plugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../SofaModule.html">The modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Sofa.html">Package containg the binding for the core of Sofa</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Scene components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core-components">Core components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#overridable-components">Overridable components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utilitary-classes">Utilitary classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sofa.Simulation.html">Controlling a simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sofa.Types.html">Default data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sofa.Helper.html">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../SofaRuntime.html">Expose aspect specific to the application/runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SofaExporter.html">Binding for the SofaExporter plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SofaTypes.html">SofaType package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../CustomModule.html">Writing custom binding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SofaPython3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../SofaModule.html">The modules</a> &raquo;</li>
+        
+          <li><a href="../Sofa.html">Package containg the binding for the core of Sofa</a> &raquo;</li>
+        
+      <li>Scene components</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/menu/_autosummary/_autosummary/Sofa.Core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-Sofa.Core"></span><div class="section" id="scene-components">
+<h1>Scene components<a class="headerlink" href="#scene-components" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="core-components">
+<h2>Core components<a class="headerlink" href="#core-components" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Data.html#Sofa.Core.Data" title="Sofa.Core.Data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Data</span></code></a></p></td>
+<td><p>The purpose of a data is to store the attributs of your component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Link.html#Sofa.Core.Link" title="Sofa.Core.Link"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Link</span></code></a></p></td>
+<td><p>A Link allows you to access a sofa component from another one anywhere in the simulation graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Node.html#Sofa.Core.Node" title="Sofa.Core.Node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Node</span></code></a></p></td>
+<td><p>A Node stores other nodes and components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Object.html#Sofa.Core.Object" title="Sofa.Core.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Object</span></code></a></p></td>
+<td><p>The class object is a base class for simulation components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Camera.html#Sofa.Core.Camera" title="Sofa.Core.Camera"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Camera</span></code></a></p></td>
+<td><p>Camera is an API dedicated to the control of the Camera in SOFA.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="overridable-components">
+<h2>Overridable components<a class="headerlink" href="#overridable-components" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.Controller.html#Sofa.Core.Controller" title="Sofa.Core.Controller"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.Controller</span></code></a></p></td>
+<td><p>An Interface for user interaction on SOFA Components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.ForceField.html#Sofa.Core.ForceField" title="Sofa.Core.ForceField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.ForceField</span></code></a></p></td>
+<td><p>An overridable class to create your own customized force field.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataEngine.html#Sofa.Core.DataEngine" title="Sofa.Core.DataEngine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataEngine</span></code></a></p></td>
+<td><p>DataEngine is a class that computes a set of Data outputs from a set of Data inputs.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="utilitary-classes">
+<h2>Utilitary classes<a class="headerlink" href="#utilitary-classes" title="Permalink to this headline">¶</a></h2>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataDict.html#Sofa.Core.DataDict" title="Sofa.Core.DataDict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataDict</span></code></a></p></td>
+<td><p>DataDict exposes the data of a sofa object in a way similar to a normal python dictionnary.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataDictIterator.html#Sofa.Core.DataDictIterator" title="Sofa.Core.DataDictIterator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataDictIterator</span></code></a></p></td>
+<td><p>Iterator reimplemented to fit dataDict.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataContainer.html#Sofa.Core.DataContainer" title="Sofa.Core.DataContainer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataContainer</span></code></a></p></td>
+<td><p>Classic python container implemented for SOFA data fields.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataString.html#Sofa.Core.DataString" title="Sofa.Core.DataString"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataString</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.DataVectorString.html#Sofa.Core.DataVectorString" title="Sofa.Core.DataVectorString"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.DataVectorString</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/_autosummary/Sofa.Core.NodeIterator.html#Sofa.Core.NodeIterator" title="Sofa.Core.NodeIterator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sofa.Core.NodeIterator</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_autosummary/_autosummary/Sofa.Core.Data.html" class="btn btn-neutral float-right" title="Sofa.Core.Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Sofa.html" class="btn btn-neutral float-left" title="Package containg the binding for the core of Sofa" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, damien.marchal@univ-lille.fr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

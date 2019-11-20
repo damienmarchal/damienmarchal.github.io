@@ -1,0 +1,55 @@
+SofaExporter.STLExporter
+========================
+
+.. currentmodule:: SofaExporter
+
+.. autoclass:: STLExporter
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~STLExporter.__init__
+      ~STLExporter.addData
+      ~STLExporter.addSlave
+      ~STLExporter.bwdInit
+      ~STLExporter.cleanup
+      ~STLExporter.computeBBox
+      ~STLExporter.findData
+      ~STLExporter.findLink
+      ~STLExporter.getAsACreateObjectParameter
+      ~STLExporter.getCategories
+      ~STLExporter.getClass
+      ~STLExporter.getClassName
+      ~STLExporter.getContext
+      ~STLExporter.getData
+      ~STLExporter.getDataFields
+      ~STLExporter.getDefinitionSourceFileName
+      ~STLExporter.getDefinitionSourceFilePos
+      ~STLExporter.getInstanciationFileName
+      ~STLExporter.getInstanciationSourceFilePos
+      ~STLExporter.getLinkPath
+      ~STLExporter.getLinks
+      ~STLExporter.getMaster
+      ~STLExporter.getName
+      ~STLExporter.getPathName
+      ~STLExporter.getSlaves
+      ~STLExporter.getTarget
+      ~STLExporter.getTemplateName
+      ~STLExporter.init
+      ~STLExporter.reinit
+      ~STLExporter.reset
+      ~STLExporter.setName
+      ~STLExporter.setSrc
+      ~STLExporter.storeResetState
+      ~STLExporter.write
+   
+   
+
+   
+   
+   

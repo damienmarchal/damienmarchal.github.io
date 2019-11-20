@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sofa.Core.Node &mdash; SofaPython3 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="Sofa.Core.Object" href="Sofa.Core.Object.html" />
+    <link rel="prev" title="Sofa.Core.Link" href="Sofa.Core.Link.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> SofaPython3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../Welcome.html">Welcome to SofaPython3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../install.html">Download and Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../SofaPlugin.html">Using the plugin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../SofaModule.html">The modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../Sofa.html">Package containg the binding for the core of Sofa</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../Sofa.Core.html">Scene components</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../../Sofa.Core.html#core-components">Core components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#overridable-components">Overridable components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Sofa.Core.html#utilitary-classes">Utilitary classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Simulation.html">Controlling a simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Types.html">Default data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Sofa.Helper.html">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaRuntime.html">Expose aspect specific to the application/runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaExporter.html">Binding for the SofaExporter plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../SofaTypes.html">SofaType package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../CustomModule.html">Writing custom binding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">SofaPython3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../SofaModule.html">The modules</a> &raquo;</li>
+        
+          <li><a href="../../../Sofa.html">Package containg the binding for the core of Sofa</a> &raquo;</li>
+        
+          <li><a href="../../Sofa.Core.html">Scene components</a> &raquo;</li>
+        
+      <li>Sofa.Core.Node</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/menu/_autosummary/_autosummary/_autosummary/_autosummary/Sofa.Core.Node.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sofa-core-node">
+<h1>Sofa.Core.Node<a class="headerlink" href="#sofa-core-node" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Sofa.Core.Node">
+<em class="property">class </em><code class="sig-prename descclassname">Sofa.Core.</code><code class="sig-name descname">Node</code><a class="headerlink" href="#Sofa.Core.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Node stores other nodes and components.</p>
+<p>A simulation in SOFA is described as a scene with an intrinsic generalized hierarchy.
+A scene is composed of nodes organized as a tree or as a Directed Acyclic Graph (DAG).
+The different simulated objects are described in separate nodes, and different representations
+of a same object can be done in different sub-nodes.</p>
+<dl>
+<dt>Example of use:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Sofa.Core</span>
+
+<span class="c1"># Create a new node</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;MyNode&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create a new node</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;MyNode&quot;&quot;)</span>
+<span class="c1"># Add a child node name &#39;Node2&#39;</span>
+<span class="n">n</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="s2">&quot;Node2&quot;</span><span class="p">)</span>
+
+<span class="c1"># Add a mechanical component to MyNode</span>
+<span class="n">n</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="s2">&quot;MechanicalObject&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;dofs&quot;</span><span class="p">)</span>
+
+<span class="n">Sofa</span><span class="o">.</span><span class="n">Simulation</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="n">Sofa</span><span class="o">.</span><span class="n">Simulation</span><span class="o">.</span><span class="k">print</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The child nodes, components and parents can be accessed using generator attributes.</p>
+<dl>
+<dt>Example of use:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ...</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;MyNode&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">n</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">parent</span> <span class="ow">in</span> <span class="n">n</span><span class="o">.</span><span class="n">parents</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">parent</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Accessing children or object from the current node is easy thanks to the generalized access
+API.
+Example of use:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ...</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">Sofa</span><span class="o">.</span><span class="n">Core</span><span class="o">.</span><span class="n">Node</span><span class="p">(</span><span class="s2">&quot;MyNode&quot;</span><span class="p">)</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="s2">&quot;child1&quot;</span><span class="p">)</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="s2">&quot;child2&quot;</span><span class="p">)</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="s2">&quot;MechanicalObject&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;dofs&quot;</span><span class="p">)</span>
+
+<span class="c1"># retrieve the node child1/child2 from the &#39;n&#39; node.</span>
+<span class="n">n</span><span class="o">.</span><span class="n">child1</span><span class="o">.</span><span class="n">child2</span>
+
+<span class="c1"># retrieve the child1/child2/dofs.position position data field from &#39;n&#39;</span>
+<span class="n">n</span><span class="o">.</span><span class="n">child1</span><span class="o">.</span><span class="n">child2</span><span class="o">.</span><span class="n">dofs</span><span class="o">.</span><span class="n">position</span>
+
+<span class="c1"># fast access.</span>
+<span class="n">n</span><span class="p">[</span><span class="s2">&quot;child1.child2.dofs.position&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="method">
+<dt id="Sofa.Core.Node.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Sofa.Core.Node.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>__init__(self: Sofa.Core.Node) -&gt; None</p>
+<blockquote>
+<div><p>Initialize the components of this node and all the nodes which depend on it.
+:rtype: Sofa.Simulation.Node</p>
+</div></blockquote>
+</li>
+<li><p>__init__(self: Sofa.Core.Node, name: str) -&gt; None</p>
+<blockquote>
+<div><p>Initialize the components of this node and all the nodes which depend on it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p>Name of the node to be created</p>
+</dd>
+<dt class="field-even">type name</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Sofa.Simulation.Node</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Sofa.Core.Node.__init__" title="Sofa.Core.Node.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addChild</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addData</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addObject</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">createChild</span></code>(self, arg0, **kwargs)</p></td>
+<td><p>Deprecated, see addChild</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">createObject</span></code>(self, arg0, **kwargs)</p></td>
+<td><p>Deprecated, see addObject</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detachFromGraph</span></code>(self)</p></td>
+<td><p>Remove the current node from the graph: depending on the type of Node, it can have one or several parents.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">findData</span></code>(self, arg0)</p></td>
+<td><p>Find a data field given its name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">findLink</span></code>(self, arg0)</p></td>
+<td><p>Find a link given its name.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAsACreateObjectParameter</span></code>(self)</p></td>
+<td><p>Get the link of the current node :rtype: string</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getChild</span></code>(self, arg0)</p></td>
+<td><p>Get the child of a node.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClass</span></code>(self)</p></td>
+<td><p>Return the class of the object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getClassName</span></code>(self)</p></td>
+<td><p>Get the name of the class of the Base.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getData</span></code>(self, arg0)</p></td>
+<td><p>Get the data field given its name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDataFields</span></code>(self)</p></td>
+<td><p>Accessor to the vector containing all the fields of this object :return: A vector containing the data fields</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDefinitionSourceFileName</span></code>(self)</p></td>
+<td><p>Returns the name of the file that contains the object definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDefinitionSourceFilePos</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is defined.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getForceField</span></code>(self, arg0)</p></td>
+<td><p>Get the force field of a node, given an index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getInstanciationFileName</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is instanciatiated.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getInstanciationSourceFilePos</span></code>(self)</p></td>
+<td><p>Returns the line number where the object is instanciatiated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLinkPath</span></code>(self)</p></td>
+<td><p>Get the link of the current node :param node :type node: Sofa.Simulation.Node*</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLinks</span></code>(self)</p></td>
+<td><p>Accessor to the vector containing all the links of this object :return: A vector containing the links</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMass</span></code>(self)</p></td>
+<td><p>Get the mass of the node</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMechanicalMapping</span></code>(self)</p></td>
+<td><p>Get the mechanical mapping of the node.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMechanicalState</span></code>(self)</p></td>
+<td><p>Get the mechanical state of the node.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getName</span></code>(self)</p></td>
+<td><p>Return the name of the entity :rtype: string</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathName</span></code>(self)</p></td>
+<td><p>Get the path name of the current node :rtype: string</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getRoot</span></code>(self)</p></td>
+<td><p>Get the root node of the current node.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getRootPath</span></code>(self)</p></td>
+<td><p>Return the path from this node to the root node</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getTemplateName</span></code>(self)</p></td>
+<td><p>Get the name of the template of the Base.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">init</span></code>(self)</p></td>
+<td><p>Initialize the components of this node and all the nodes which depend on it.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isInitialized</span></code>(self)</p></td>
+<td><p>Checks if the node has been initialized :return: true if it has been initialized</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveChild</span></code>(self, arg0, arg1)</p></td>
+<td><p>Move a node from another node.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeChild</span></code>(*args, **kwargs)</p></td>
+<td><p>Overloaded function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeObject</span></code>(self, arg0)</p></td>
+<td><p>Remove an object :param object: the object to be removed :type object: BaseObject</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sendEvent</span></code>(self, arg0, arg1)</p></td>
+<td><p>Send an event to other nodes, by creating a PythonScriptEvent and propagating it to the rest of the tree.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setName</span></code>(self, arg0)</p></td>
+<td><p>Set the name of this object :param n :type n: string</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></p></td>
+<td><p>Field interface to acces the children of a node.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">objects</span></code></p></td>
+<td><p>Field interface to acces the objects of a node.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parents</span></code></p></td>
+<td><p>Field interface to acces the parents of a node.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Sofa.Core.Object.html" class="btn btn-neutral float-right" title="Sofa.Core.Object" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Sofa.Core.Link.html" class="btn btn-neutral float-left" title="Sofa.Core.Link" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, damien.marchal@univ-lille.fr
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

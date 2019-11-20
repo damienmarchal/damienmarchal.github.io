@@ -1,0 +1,54 @@
+Sofa.Core.Controller
+====================
+
+.. currentmodule:: Sofa.Core
+
+.. autoclass:: Controller
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Controller.__init__
+      ~Controller.addData
+      ~Controller.addSlave
+      ~Controller.bwdInit
+      ~Controller.cleanup
+      ~Controller.computeBBox
+      ~Controller.findData
+      ~Controller.findLink
+      ~Controller.getAsACreateObjectParameter
+      ~Controller.getCategories
+      ~Controller.getClass
+      ~Controller.getClassName
+      ~Controller.getContext
+      ~Controller.getData
+      ~Controller.getDataFields
+      ~Controller.getDefinitionSourceFileName
+      ~Controller.getDefinitionSourceFilePos
+      ~Controller.getInstanciationFileName
+      ~Controller.getInstanciationSourceFilePos
+      ~Controller.getLinkPath
+      ~Controller.getLinks
+      ~Controller.getMaster
+      ~Controller.getName
+      ~Controller.getPathName
+      ~Controller.getSlaves
+      ~Controller.getTarget
+      ~Controller.getTemplateName
+      ~Controller.init
+      ~Controller.reinit
+      ~Controller.reset
+      ~Controller.setName
+      ~Controller.setSrc
+      ~Controller.storeResetState
+   
+   
+
+   
+   
+   

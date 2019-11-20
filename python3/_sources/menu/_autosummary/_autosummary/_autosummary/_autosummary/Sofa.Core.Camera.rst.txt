@@ -1,0 +1,58 @@
+Sofa.Core.Camera
+================
+
+.. currentmodule:: Sofa.Core
+
+.. autoclass:: Camera
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Camera.__init__
+      ~Camera.addData
+      ~Camera.addSlave
+      ~Camera.bwdInit
+      ~Camera.cleanup
+      ~Camera.computeBBox
+      ~Camera.findData
+      ~Camera.findLink
+      ~Camera.getAsACreateObjectParameter
+      ~Camera.getCategories
+      ~Camera.getClass
+      ~Camera.getClassName
+      ~Camera.getContext
+      ~Camera.getData
+      ~Camera.getDataFields
+      ~Camera.getDefinitionSourceFileName
+      ~Camera.getDefinitionSourceFilePos
+      ~Camera.getInstanciationFileName
+      ~Camera.getInstanciationSourceFilePos
+      ~Camera.getLinkPath
+      ~Camera.getLinks
+      ~Camera.getMaster
+      ~Camera.getModelViewMatrix
+      ~Camera.getName
+      ~Camera.getOpenGLModelViewMatrix
+      ~Camera.getOpenGLProjectionMatrix
+      ~Camera.getPathName
+      ~Camera.getProjectionMatrix
+      ~Camera.getSlaves
+      ~Camera.getTarget
+      ~Camera.getTemplateName
+      ~Camera.init
+      ~Camera.reinit
+      ~Camera.reset
+      ~Camera.setName
+      ~Camera.setSrc
+      ~Camera.storeResetState
+   
+   
+
+   
+   
+   
