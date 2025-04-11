@@ -1,6 +1,0 @@
-SofaRuntime.importPlugin
-========================
-
-.. currentmodule:: SofaRuntime
-
-.. autofunction:: importPlugin
